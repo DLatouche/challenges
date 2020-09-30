@@ -1,0 +1,114 @@
+body {
+  background: url("./img/background.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  height: 100vh;
+  font-family: "roboto";
+}
+
+.container {
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  background-color: #fff;
+  position: relative;
+}
+.container .header {
+  display: flex;
+  flex-direction: column;
+}
+.container .header .stepper {
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+}
+.container .header .stepper .step {
+  margin: 8px;
+  height: 10px;
+  width: 10px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: block;
+}
+.container .header .stepper .stepActived {
+  background-color: #757575;
+}
+.container .header .title {
+  padding: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  width: 350px;
+}
+.container .body .choice {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 0px;
+  border-top: 1px solid #ccc;
+}
+.container .body .choice:hover {
+  background-color: #eeeeee;
+  cursor: pointer;
+}
+.container .body .choice .imgContainer {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .body .choice .imgContainer img {
+  width: 50px;
+}
+.container .body .choice p {
+  width: 60%;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #bbb;
+}
+.container .body .choice span {
+  width: 10%;
+  padding-right: 4px;
+  opacity: 0;
+}
+.container .body .choice.selected span {
+  opacity: 1;
+}
+.container .body .choice.selected p {
+  color: #212121;
+}
+.container .footer {
+  height: 56px;
+  user-select: none;
+}
+.container .footer .btn {
+  height: 56px;
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #598bdd;
+  border-radius: 0 0 5px 5px;
+  color: #fff;
+  cursor: pointer;
+}
+.container .footer .btn span {
+  padding-left: 16px;
+}
+.container .footer .btn:hover {
+  background-color: #3867b4;
+}
+.container .footer .btn:active {
+  height: 52px;
+}
+
+/*# sourceMappingURL=styles.css.map */
