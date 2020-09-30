@@ -1,0 +1,74 @@
+:root {
+  --background: #789acd;
+  --primary: #5464b5;
+  --primaryContrast: #fff;
+  --police: #524d40;
+}
+
+*{
+  font-family: "roboto";
+}
+
+body {
+  background-color: var(--background);
+  color: var(--police);
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  justify-items: center;
+  height: 100vh;
+  margin: 0px
+}
+
+.container {
+  background-color: var(--primaryContrast);
+  display: flex;
+  border-radius: 5px;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.item {
+  padding: 16px;
+  margin: 16px;
+  width: 300px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item:hover{
+  cursor: pointer;
+  background-color:#EEE
+}
+
+.item-img{
+  width: 75px;
+}
+
+.item-title{
+  font-size: 1.3rem;
+  text-transform:uppercase;
+  color: var(--primary);
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+.item-text{
+  text-align: center;
+  width: 250px;
+}
+
+.item-price{
+  color: var(--primary);
+  font-weight: bold;
+}
+
+.item-price-devise{
+  font-size: 1rem;
+
+}
+
+.item-price-value{
+  font-size: 1.6rem;
+}
