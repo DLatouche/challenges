@@ -1,0 +1,22 @@
+$textColor: #212121;
+$textInactive: rgb(200, 200, 200);
+$primary: #6a96d8;
+$leftColor: #e6edf6;
+$rightColor: #ddcaca;
+$infoColor: #ffc2c1;
+
+body {
+  font-family: "roboto";
+  display: flex;
+  background: rgb(184, 210, 245);
+  background: linear-gradient(
+    0deg,
+    rgba(184, 210, 245, 1) 0%,
+    rgba(230, 237, 246, 1) 100%
+  );
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  height: 100vh;
+  font-weight: 600;
+}
