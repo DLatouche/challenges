@@ -1,0 +1,190 @@
+$textColor: #212121;
+$textInactive: rgb(200, 200, 200);
+$primary: #6a96d8;
+$leftColor: #e6edf6;
+$rightColor: #ddcaca;
+$infoColor: #ffc2c1;
+
+body {
+  font-family: "roboto";
+  display: flex;
+  background: rgb(184, 210, 245);
+  background: linear-gradient(
+    0deg,
+    rgba(184, 210, 245, 1) 0%,
+    rgba(230, 237, 246, 1) 100%
+  );
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  height: 100vh;
+  font-weight: 600;
+}
+
+.box {
+  overflow: hidden;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  border-radius: 2px;
+  width: 500px;
+  height: 550px;
+  .name {
+    background-color: $primary;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    p {
+      display: flex;
+      align-items: center;
+      width: 90%;
+      color: white;
+      font-size: 1.3rem;
+      text-transform: uppercase;
+      font-weight: 500;
+      letter-spacing: 1px;
+      &:before {
+        padding-right: 8px;
+        height: 10px;
+        width: 10px;
+        font-size: 2rem;
+        display: flex;
+        align-items: center;
+        content: "•";
+      }
+    }
+    span {
+      cursor: pointer;
+      img {
+        height: 30px;
+      }
+      &:hover {
+        opacity: 1;
+        transition: all 0.3s;
+      }
+      transition: all 0.3s;
+      opacity: 0.8;
+      width: 10%;
+    }
+  }
+  .messages {
+    .today {
+      opacity: 0.5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 16px;
+      text-align: center;
+      border-bottom: 1px solid $textInactive;
+      color: $textInactive;
+      line-height: 0.1em;
+      span {
+        padding: 8px;
+        background-color: white;
+        text-transform: uppercase;
+      }
+    }
+
+    .messagesContainer {
+      display: flex;
+      flex-direction: column;
+      .messageContainer {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        .time {
+          color: $textInactive;
+          margin: 0 16px;
+        }
+        .message {
+          display: flex;
+          padding: 8px;
+          .txt {
+            padding: 16px;
+          }
+        }
+      }
+      .right,
+      .left {
+        display: flex;
+        flex-direction: row;
+      }
+      .right {
+        justify-content: flex-end;
+        .messageContainer {
+          .time {
+            text-align: right;
+          }
+          .message {
+            flex-direction: row-reverse;
+            .txt {
+              border-radius: 5px 0 5px 5px;
+              background-color: $rightColor;
+            }
+          }
+        }
+        .arrow {
+          width: 0px;
+          height: 0px;
+          border-top: 0 solid transparent;
+          border-bottom: 10px solid transparent;
+          border-left: 8px solid $rightColor;
+        }
+      }
+      .left {
+        justify-content: flex-start;
+        .messageContainer {
+          display: flex;
+          flex-direction: column;
+          .time {
+            text-align: left;
+          }
+          .message {
+            flex-direction: row;
+            .txt {
+              background-color: $leftColor;
+              border-radius: 0px 5px 5px 5px;
+            }
+          }
+        }
+        .arrow {
+          width: 0px;
+          height: 0px;
+          border-top: 0 solid transparent;
+          border-bottom: 10px solid transparent;
+          border-right: 8px solid $leftColor;
+        }
+      }
+
+      .info {
+        background-color: $infoColor;
+        border-radius: 5px;
+        padding: 16px;
+        margin-right: 8px;
+      }
+    }
+  }
+  .input {
+    border-top: 1px solid $textInactive;
+    margin: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    input {
+      border: none;
+      margin: 24px 8px 0 0;
+      font-weight: 550;
+      font-size: 1.2rem;
+    }
+    button {
+      margin: 24px 8px 0 0;
+      background-color: transparent;
+      border: none;
+      text-transform: uppercase;
+      color: $primary;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+  }
+}

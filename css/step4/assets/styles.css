@@ -1,0 +1,176 @@
+@charset "UTF-8";
+body {
+  font-family: "roboto";
+  display: flex;
+  background: #b8d2f5;
+  background: linear-gradient(0deg, #b8d2f5 0%, #e6edf6 100%);
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  height: 100vh;
+  font-weight: 600;
+}
+
+.box {
+  overflow: hidden;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  border-radius: 2px;
+  width: 500px;
+  height: 550px;
+}
+.box .name {
+  background-color: #6a96d8;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+.box .name p {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  color: white;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.box .name p:before {
+  padding-right: 8px;
+  height: 10px;
+  width: 10px;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  content: "•";
+}
+.box .name span {
+  cursor: pointer;
+  transition: all 0.3s;
+  opacity: 0.8;
+  width: 10%;
+}
+.box .name span img {
+  height: 30px;
+}
+.box .name span:hover {
+  opacity: 1;
+  transition: all 0.3s;
+}
+.box .messages .today {
+  opacity: 0.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 16px;
+  text-align: center;
+  border-bottom: 1px solid #c8c8c8;
+  color: #c8c8c8;
+  line-height: 0.1em;
+}
+.box .messages .today span {
+  padding: 8px;
+  background-color: white;
+  text-transform: uppercase;
+}
+.box .messages .messagesContainer {
+  display: flex;
+  flex-direction: column;
+}
+.box .messages .messagesContainer .messageContainer {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+.box .messages .messagesContainer .messageContainer .time {
+  color: #c8c8c8;
+  margin: 0 16px;
+}
+.box .messages .messagesContainer .messageContainer .message {
+  display: flex;
+  padding: 8px;
+}
+.box .messages .messagesContainer .messageContainer .message .txt {
+  padding: 16px;
+}
+.box .messages .messagesContainer .right,
+.box .messages .messagesContainer .left {
+  display: flex;
+  flex-direction: row;
+}
+.box .messages .messagesContainer .right {
+  justify-content: flex-end;
+}
+.box .messages .messagesContainer .right .messageContainer .time {
+  text-align: right;
+}
+.box .messages .messagesContainer .right .messageContainer .message {
+  flex-direction: row-reverse;
+}
+.box .messages .messagesContainer .right .messageContainer .message .txt {
+  border-radius: 5px 0 5px 5px;
+  background-color: #ddcaca;
+}
+.box .messages .messagesContainer .right .arrow {
+  width: 0px;
+  height: 0px;
+  border-top: 0 solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 8px solid #ddcaca;
+}
+.box .messages .messagesContainer .left {
+  justify-content: flex-start;
+}
+.box .messages .messagesContainer .left .messageContainer {
+  display: flex;
+  flex-direction: column;
+}
+.box .messages .messagesContainer .left .messageContainer .time {
+  text-align: left;
+}
+.box .messages .messagesContainer .left .messageContainer .message {
+  flex-direction: row;
+}
+.box .messages .messagesContainer .left .messageContainer .message .txt {
+  background-color: #e6edf6;
+  border-radius: 0px 5px 5px 5px;
+}
+.box .messages .messagesContainer .left .arrow {
+  width: 0px;
+  height: 0px;
+  border-top: 0 solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 8px solid #e6edf6;
+}
+.box .messages .messagesContainer .info {
+  background-color: #ffc2c1;
+  border-radius: 5px;
+  padding: 16px;
+  margin-right: 8px;
+}
+.box .input {
+  border-top: 1px solid #c8c8c8;
+  margin: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.box .input input {
+  border: none;
+  margin: 24px 8px 0 0;
+  font-weight: 550;
+  font-size: 1.2rem;
+}
+.box .input button {
+  margin: 24px 8px 0 0;
+  background-color: transparent;
+  border: none;
+  text-transform: uppercase;
+  color: #6a96d8;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/*# sourceMappingURL=styles.css.map */
